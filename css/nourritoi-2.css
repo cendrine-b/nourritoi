@@ -1,0 +1,74 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "MuseoSans-500", Helvetica, sans-serif;
+  text-align: center;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+
+/* //////////////////////////////////////// FIRST PART //////////////////////////////////////// */
+
+.first-part {
+  height: 100vh;
+  background: url(../images/header_background.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* //////////////////////////////////////// HEADER //////////////////////////////////////// */
+
+header {
+  padding: 1.6em;
+}
+
+/* //////////////// HEADER LOGO //////////////// */
+
+.header_logo a {
+  color: white;
+  font-size: 2rem;
+}
+
+.header_logo a b {
+  font-size: 3rem;
+  font-family: "MuseoSans-500", Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* //////////////////// BOUTON SE CONNECTER //////////////////// */
+
+.btn.sharp {
+  border-radius:0;
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+
+/* //////////////////////////////////////// */
