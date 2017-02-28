@@ -25,42 +25,89 @@ body {
 /* //////////////////////////////////////// HEADER //////////////////////////////////////// */
 
 header {
-  padding: 1.6em;
+  padding-top: 2em;
 }
 
-/* //////////////// HEADER LOGO //////////////// */
+span.glyphicon-shopping-cart, span.glyphicon-user, .navbar-header a {
+  font-size: 2em;
+}
 
-.header_logo a {
+.navbar-header a i {
+  font: italic bold 1.2em "MuseoSans", Helvetica, sans-serif;
+}
+
+
+#nav-collect {
+  float: right;
+}
+
+#glyphicon-user {
+  float: left;
+}
+
+/*.navbar-brand {
+  text-align: center !important;
+}*/
+
+
+
+/*.header-english, .header-cart, .header-logged {
+  display: inline-block;
+  vertical-align: middle;
+}*/
+
+
+/*#nav-collect ul li a {
+  display: inline-block;
+  vertically-align: middle;
+}*/
+
+
+
+
+@media screen and (min-width: 360px){
+
+  /* TRANSPARENT BACKGROUND TO WHITE */
+
+  #custom-nav {
+    background-color: rgba(0,0,0,0);
+    border: 0;
+  }
+
+  #custom-nav .container {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+  }
+
+  #custom-nav.affix {
+      top: 0;
+      min-width: 100%;
+      background-color: rgba(255,255,255,1);
+      opacity: 1;
+  }
+
+  /*#navbar-header.affix {
+    color: #d70f64 !important;
+  }*/
+
+}
+
+
+/* WHITE LOGO, PICTO and TEXT NAV */
+#custom-nav a, span {
   color: white;
-  font-size: 2rem;
-}
-
-.header_logo a b {
-  font-size: 3rem;
-  font-family: "MuseoSans-500", Helvetica, sans-serif;
 }
 
 
 
+/*#custom-nav {
+  a.affix {
+    color: #d70f64;
+  }
+}*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* //////////////////// BOUTON SE CONNECTER //////////////////// */
 
@@ -68,7 +115,4 @@ header {
   border-radius:0;
   background: none;
   border: 1px solid white;
-  color: white;
 }
-
-/* //////////////////////////////////////// */
