@@ -26,53 +26,56 @@
 
     <div id="wrap" class="text-center">
 
+
+        <!-- //////////////////////////////////////////////// FIRST PART : HEADER //////////////////////////////////////////////// -->
+
         <section class="first-part">
 
             <!-- //////////// HEADER //////////// -->
             <header id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-              <nav id="custom-nav" class="navbar navbar-fixed-top" role="navigation">
-                <div class="container">
+                <nav id="custom-nav" class="navbar navbar-fixed-top" role="navigation">
+                    <div class="container">
 
-                  <!--<div class="row">-->
+                        <!--<div class="row">-->
 
-                    <!-- //////////// NAVBAR HEADER //////////// -->
-                    <div class="navbar-header page-scroll">
-                      <!-- //////////// BUTTON //////////// -->
-                      <!-- //////////// BUTTON SHOPPING CART //////////// -->
-                      <button id="glyphicon-cart" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <!-- //////////// NAVBAR HEADER //////////// -->
+                        <div class="navbar-header page-scroll">
+                            <!-- //////////// BUTTON //////////// -->
+                            <!-- //////////// BUTTON SHOPPING CART //////////// -->
+                            <button id="glyphicon-cart" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="glyphicon glyphicon-shopping-cart"></span>
                       </button>
-                      <!-- //////////// BUTTON USER //////////// -->
-                      <button id="glyphicon-user" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                            <!-- //////////// BUTTON USER //////////// -->
+                            <button id="glyphicon-user" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
                         <span class="glyphicon glyphicon-user"></span>
                       </button>
-                      <!-- //////////// BRAND //////////// -->
-                      <a id="brand" class="navbar-brand page-scroll" href="#">
-                        <span class="glyphicon glyphicon-ice-lolly-tasted" aria-hidden="true"></span><i>Nourritoi</i>
-                      </a>
+                            <!-- //////////// BRAND //////////// -->
+                            <a id="brand" class="navbar-brand page-scroll" href="#">
+                                <span class="glyphicon glyphicon-ice-lolly-tasted" aria-hidden="true"></span><i>Nourritoi</i>
+                            </a>
+                        </div>
+                        <!-- //////////// COLLECT nav links for toggling //////////// -->
+                        <div id="nav-collect" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a class="header-english" href="#" data-no-turbolink="true">English</a></li>
+                                <li id="bs-example-navbar-collapse-1">
+                                    <a class="header-cart" href="#">
+                                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                    </a>
+                                </li>
+                                <li id="bs-example-navbar-collapse-2">
+                                    <a class="header-logged" href="#">
+                                        <button type="button" class="btn sharp btn-outline-secondary btn-md">Se connecter</button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <!--</div>-->
+
                     </div>
-                    <!-- //////////// COLLECT nav links for toggling //////////// -->
-                    <div id="nav-collect" class="collapse navbar-collapse">
-                      <ul class="nav navbar-nav">
-                        <li><a class="header-english" href="#" data-no-turbolink="true">English</a></li>
-                        <li id="bs-example-navbar-collapse-1">
-                          <a class="header-cart" href="#">
-                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                          </a>
-                        </li>
-                        <li id="bs-example-navbar-collapse-2">
-                          <a class="header-logged" href="#">
-                            <button type="button" class="btn sharp btn-outline-secondary btn-md">Se connecter</button>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-
-
-                  <!--</div>-->
-
-                </div>
-              </nav>
+                </nav>
             </header>
 
             <!-- //////////// SECTION TEASER //////////// -->
@@ -86,13 +89,13 @@
 
             <!-- //////////// FORM //////////// -->
             <form class="form-inline container">
-              <label class="sr-only" for="inlineFormInputGroup">Entrer votre adresse</label>
-              <div class="input-group col-lg-6">
-                <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Entrez votre adresse">
-              </div>
-              <button type="button" class="btn pink btn-primary btn-lg text-uppercase">Livraison</button>
-              <span class="button-text-separator">ou</span>
-              <button type="button" class="btn pink btn-primary btn-lg text-uppercase">Retrait au restaurant</button>
+                <label class="sr-only" for="inlineFormInputGroup">Entrer votre adresse</label>
+                <div class="input-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Entrez votre adresse">
+                </div>
+                <button type="button" class="btn pink btn-primary btn-lg text-uppercase">Livraison</button>
+                <span class="button-text-separator">ou</span>
+                <button type="button" class="btn pink btn-primary btn-lg text-uppercase">Retrait au restaurant</button>
             </form>
 
             <!--<form class="address-form full-address">
@@ -120,41 +123,342 @@
 
         </section>
 
+        <!-- //////////////////////////////////////////////// SECOND PART : BEST ADDRESSES //////////////////////////////////////////////// -->
 
+        <!-- //////////////////////////////////////////////// THIRD PART : TOWNS //////////////////////////////////////////////// -->
 
+        <div class="villes">
+            <div class="row">
+                <div class="livraison_text">
+                    <div class="titrelivraisonmain">
+                        <h2>Nous livrons, chez vous !</h2>
+                    </div>
+                    <div class="titrelivraison">
+                        <h1>RETROUVEZ VOS RESTAURANTS PRÉFÉRÉS</h1>
+                    </div>
+                </div>
+                <div class="row">
 
+                  <!-- Je pense que pour centrer les images sur la page il faudrait utiliser autre chose que les col offset.
+                  A voir ensemble si quelqu'un à une idée. Peut-être avec les classes thumbnail et image-responsive comme dans une gallery ?
+                  L'avantage c'est que l'on aurait plus de problèmes de responsive. -->
+                    <div class="col-xs-offset-2 col-lg-3">
+                        <div class="container1">
+                            <div class="photo1">
+                                <img class="front" src="images/paris_front.jpg"></img>
+                                <img class="back" src="images/paris_hover.jpg"></img>
+                            </div>
+                            <div class="bouton">
+                                <button type="button" class="btn btn-default">trouver un resto
+                          </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-offset-2 col-lg-5">
+                        <div class="container2">
+                            <div class="photo2">
+                                <img class="front" src="images/lyon_front.jpg">
+                                <img class="back" src="images/lyon_hover.jpg"></img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-offset-2 col-lg-3">
+                        <div class="container3">
+                            <div class="photo3">
+                                <img class="front" src="images/bordeaux_front.jpg">
+                                <img class="back" src="images/bordeaux_hover.jpg"></img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-offset-2 col-lg-5">
+                        <div class="container4">
+                            <div class="photo4">
+                                <img class="front" src="images/lille_front.jpg">
+                                <img class="back" src="images/lille_hover.jpg"></img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-offset-2 col-lg-3">
+                        <div class="container5">
+                            <div class="photo5">
+                                <img class="front" src="images/nantes_front.jpg">
+                                <img class="back" src="images/nantes_hover.jpg"></img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- //////////////////////////////////////////////// FOURTH PART : PHONES //////////////////////////////////////////////// -->
 
+        <!--Titres-->
+        <section>
+          <div class="emportez_text">
+            <div class="text-center emportez">
+              <h2>Emportez Nourritoi partout où vous allez !<h2>
+            </div>
+            <div class="text-center telechargez">
+              <h1>TELECHARGEZ MAINTENANT NOTRE APPLICATION<h1>
+            </div>
+          </div>
 
-<!-- /////////////////////////// REMPLISSAGE UNIQUEMENT /////////////////////////// -->
-<section class="remplissage">
-  <p>Aliquip exercitation laboris anim incididunt ullamco excepteur cupidatat eu minim laboris reprehenderit sint mollit elit. Duis laborum dolor eu reprehenderit veniam minim nostrud duis amet cillum non non. Incididunt ipsum commodo deserunt incididunt sit proident qui ipsum est.</p>
-  <p>Non laborum quis ut deserunt esse commodo tempor nulla non veniam enim amet ullamco pariatur enim consectetur elit. Elit eiusmod ea irure eu nisi veniam mollit aute proident reprehenderit nisi eu enim. Id do id amet ipsum consectetur labore consectetur ea commodo Lorem dolore ut velit est exercitation et et. Sunt aliqua commodo amet sint non tempor duis id duis qui dolore anim excepteur. Voluptate occaecat Lorem officia non tempor ea irure reprehenderit quis aliqua ipsum nostrud reprehenderit enim exercitation exercitation.</p>
-  <p>Sunt consequat irure adipisicing id ut occaecat cillum. Veniam ad consectetur laboris labore deserunt commodo pariatur fugiat. Fugiat aliqua laboris cupidatat exercitation voluptate labore qui ullamco non cillum et. Incididunt ipsum eiusmod anim voluptate amet excepteur nostrud culpa mollit incididunt dolor laboris pariatur id sit sit. Cupidatat ad dolore laborum pariatur magna fugiat laborum. Ullamco nulla velit aliquip aliqua irure duis et exercitation amet commodo fugiat.</p>
-  <p>Eu do sint in anim est id aliquip velit eiusmod sint ea. Tempor duis aute excepteur nisi veniam veniam cillum ad exercitation in id. Dolore ex labore in ex magna enim deserunt adipisicing occaecat duis sint dolore exercitation cupidatat minim minim. Ipsum incididunt ut aliqua dolor irure adipisicing officia irure ex dolore dolore cillum ut deserunt nostrud ipsum non. Nostrud consequat et nostrud elit cupidatat do culpa cillum eu minim labore nisi do.</p>
-  <p>Est in enim voluptate dolor voluptate nisi dolore aute consequat amet ad dolore in cillum do ut. Reprehenderit ullamco enim proident est nostrud magna commodo eiusmod nulla pariatur enim. Officia labore non cillum ea do consectetur ad laborum mollit ullamco consequat magna. Irure Lorem reprehenderit duis aliquip magna excepteur est Lorem voluptate nostrud.</p>
-  <p>Proident eu dolore cillum esse aute sit laborum adipisicing anim nostrud excepteur. Do ad do sint aliqua consequat non enim excepteur minim minim eiusmod exercitation est amet. Veniam tempor esse labore labore ex incididunt eu do veniam. Nisi est incididunt ea duis Lorem sit cupidatat nulla ipsum pariatur labore deserunt tempor labore. Fugiat nulla cillum proident eu fugiat exercitation aliquip anim labore commodo ut magna nostrud labore officia esse est. Qui officia et sint excepteur commodo id culpa proident officia exercitation pariatur dolor ex incididunt ex duis aute. Eu id tempor officia enim aute aliquip est aliqua irure fugiat duis eu culpa laborum velit ipsum do. Laboris commodo culpa magna nisi nulla duis id nostrud ut amet deserunt amet ipsum in.</p>
-  <p>Enim nostrud excepteur aliqua anim deserunt aliquip deserunt consequat dolore eiusmod deserunt commodo deserunt culpa. Occaecat ipsum minim eu qui labore eiusmod commodo sint qui reprehenderit dolore laboris minim ut id dolore cillum. Lorem voluptate deserunt eu tempor velit do reprehenderit est ea nostrud ea reprehenderit quis deserunt sunt minim. Culpa fugiat aliquip anim tempor laborum eu ipsum labore ipsum esse Lorem enim commodo. Nulla est nulla amet sint consectetur Lorem et proident. Dolore consectetur qui exercitation nisi elit enim incididunt exercitation elit veniam aute.</p>
-  <p>Voluptate reprehenderit irure laborum Lorem Lorem nisi Lorem minim minim excepteur. Sit adipisicing occaecat adipisicing ex exercitation proident nostrud duis duis eiusmod occaecat ea veniam deserunt labore esse. Veniam eiusmod qui magna dolore aliquip sint quis exercitation fugiat dolor exercitation fugiat culpa dolore magna. Eiusmod do aliquip tempor voluptate minim nulla dolore sunt aliquip eiusmod id aliquip dolor laborum minim. Ut cupidatat fugiat exercitation officia fugiat ut occaecat pariatur excepteur laborum dolore sit excepteur elit sunt.</p>
-  <p>Aliquip exercitation laboris anim incididunt ullamco excepteur cupidatat eu minim laboris reprehenderit sint mollit elit. Duis laborum dolor eu reprehenderit veniam minim nostrud duis amet cillum non non. Incididunt ipsum commodo deserunt incididunt sit proident qui ipsum est.</p>
-  <p>Non laborum quis ut deserunt esse commodo tempor nulla non veniam enim amet ullamco pariatur enim consectetur elit. Elit eiusmod ea irure eu nisi veniam mollit aute proident reprehenderit nisi eu enim. Id do id amet ipsum consectetur labore consectetur ea commodo Lorem dolore ut velit est exercitation et et. Sunt aliqua commodo amet sint non tempor duis id duis qui dolore anim excepteur. Voluptate occaecat Lorem officia non tempor ea irure reprehenderit quis aliqua ipsum nostrud reprehenderit enim exercitation exercitation.</p>
-  <p>Sunt consequat irure adipisicing id ut occaecat cillum. Veniam ad consectetur laboris labore deserunt commodo pariatur fugiat. Fugiat aliqua laboris cupidatat exercitation voluptate labore qui ullamco non cillum et. Incididunt ipsum eiusmod anim voluptate amet excepteur nostrud culpa mollit incididunt dolor laboris pariatur id sit sit. Cupidatat ad dolore laborum pariatur magna fugiat laborum. Ullamco nulla velit aliquip aliqua irure duis et exercitation amet commodo fugiat.</p>
-  <p>Eu do sint in anim est id aliquip velit eiusmod sint ea. Tempor duis aute excepteur nisi veniam veniam cillum ad exercitation in id. Dolore ex labore in ex magna enim deserunt adipisicing occaecat duis sint dolore exercitation cupidatat minim minim. Ipsum incididunt ut aliqua dolor irure adipisicing officia irure ex dolore dolore cillum ut deserunt nostrud ipsum non. Nostrud consequat et nostrud elit cupidatat do culpa cillum eu minim labore nisi do.</p>
-  <p>Est in enim voluptate dolor voluptate nisi dolore aute consequat amet ad dolore in cillum do ut. Reprehenderit ullamco enim proident est nostrud magna commodo eiusmod nulla pariatur enim. Officia labore non cillum ea do consectetur ad laborum mollit ullamco consequat magna. Irure Lorem reprehenderit duis aliquip magna excepteur est Lorem voluptate nostrud.</p>
-  <p>Proident eu dolore cillum esse aute sit laborum adipisicing anim nostrud excepteur. Do ad do sint aliqua consequat non enim excepteur minim minim eiusmod exercitation est amet. Veniam tempor esse labore labore ex incididunt eu do veniam. Nisi est incididunt ea duis Lorem sit cupidatat nulla ipsum pariatur labore deserunt tempor labore. Fugiat nulla cillum proident eu fugiat exercitation aliquip anim labore commodo ut magna nostrud labore officia esse est. Qui officia et sint excepteur commodo id culpa proident officia exercitation pariatur dolor ex incididunt ex duis aute. Eu id tempor officia enim aute aliquip est aliqua irure fugiat duis eu culpa laborum velit ipsum do. Laboris commodo culpa magna nisi nulla duis id nostrud ut amet deserunt amet ipsum in.</p>
-  <p>Enim nostrud excepteur aliqua anim deserunt aliquip deserunt consequat dolore eiusmod deserunt commodo deserunt culpa. Occaecat ipsum minim eu qui labore eiusmod commodo sint qui reprehenderit dolore laboris minim ut id dolore cillum. Lorem voluptate deserunt eu tempor velit do reprehenderit est ea nostrud ea reprehenderit quis deserunt sunt minim. Culpa fugiat aliquip anim tempor laborum eu ipsum labore ipsum esse Lorem enim commodo. Nulla est nulla amet sint consectetur Lorem et proident. Dolore consectetur qui exercitation nisi elit enim incididunt exercitation elit veniam aute.</p>
-  <p>Voluptate reprehenderit irure laborum Lorem Lorem nisi Lorem minim minim excepteur. Sit adipisicing occaecat adipisicing ex exercitation proident nostrud duis duis eiusmod occaecat ea veniam deserunt labore esse. Veniam eiusmod qui magna dolore aliquip sint quis exercitation fugiat dolor exercitation fugiat culpa dolore magna. Eiusmod do aliquip tempor voluptate minim nulla dolore sunt aliquip eiusmod id aliquip dolor laborum minim. Ut cupidatat fugiat exercitation officia fugiat ut occaecat pariatur excepteur laborum dolore sit excepteur elit sunt.</p>
-</section>
+        <!-- Telephones -->
+          <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <img class="img-responsive" alt="" src="images/smartphone_fr-left.png">
+                    </div>
+                    <div class="col-xs-4">
+                    <div class="logo_apple">
+                        <img class="img-responsive" alt=""  src="images/apple-store.png"/>
+                        </div>
+                        <div>
+                        <img class="img-responsive" alt="" src="images/google-play.png"/>
+                      </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <img class="img-responsive" alt="" src="images/smartphone_fr-right.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- //////////////////////////////////////////////// FIFTH PART : ENTERPRISE //////////////////////////////////////////////// -->
+
+        <div class="enterprise">
+          <div class="enterprise_text">
+            <h2>Soyez à l'avant-garde</h2>
+            <h1>Avec notre solution entreprise : régalez vos équipes</h1>
+            <p>Quand le café ne suffit plus, les meilleurs restaurants de France viennent directement dans vos bureaux.
+              Partagez un bon moment avec vos collègues et rechargez vos batteries pour atteindre vos objectifs.
+              Nourritoi se mobilise pour votre entreprise.</p>
+          </div>
+          <!--<p class="a">Soyez a l'avant-garde</p>
+          <p class="b"> AVEC NOTRE SOLUTION </p>
+          <p class="c">ENTREPRISE : REGALEZ VOS</p>
+          <p class="d">EQUIPES</p>
+          <p class="e">Quand le café ne suffit plus, les meilleurs restaurants de France viennent directement dans vos bureaux.</p>
+          <p class="f">Partagez un bon moment avec vos collègues et rechargez vos batteries pour atteindre vos objectifs.</p>
+          <p class="g">foodora se mobilise pour votre entreprise.</p>-->
+        </div>
+
+        <!-- //////////////////////////////////////////////// SIXTH PART : FOOTER //////////////////////////////////////////////// -->
+
+        <footer>
+            <section class="container section6">
+
+                <!-- Phrase d'accroche -->
+
+                <div class="footerxxtop">
+                    <div class="newsletter text-center">
+                        <p>Souhaitez-vous recevoir les bons plans Nourritoi ? <b>Inscrivez-vous à notre newsletter :</b></p>
+                    </div>
+                </div>
+
+                <!-- formulaire -->
+
+                <div class="container footerxtop text-center">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <select class="form-control" id="city" placeholder="Ville">
+              <option>Ville</option>
+              <option>Asnières-sur-Seine</option>
+              <option>Bordeaux</option>
+              <option>Boulogne Billancourt</option>
+              <option>Courbevoie</option>
+              <option>Issy-les-moulineaux</option>
+              <option>Ivry-sur-Seine</option>
+              <option>La Garenne-colombes</option>
+              <option>Levallois-Perret</option>
+              <option>Lille</option>
+              <option>Lyon</option>
+              <option>Malakoff</option>
+              <option>Montreuil</option>
+              <option>Montrouge</option>
+              <option>Nanterre</option>
+              <option>Nantes</option>
+              <option>Neuilly Sur Seine</option>
+              <option>Pantin</option>
+              <option>Paris</option>
+              <option>Puteaux</option>
+              <option>Rueil-Malmaison</option>
+              <option>Saint-Denis</option>
+              <option>Saint-Mandé</option>
+              <option>Saint-Ouen</option>
+              <option>Villeurbanne</option>
+              <option>Vincennes</<option>
+            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <button type="submit" class="btn btn-default bouton">Je m'inscris</button>
+                    </form>
+                </div>
+
+                <!-- logo -->
+
+                <div class="row footertop">
+                    <div class="footer__logo col-xs-2">
+                        <i class="icon-logo"></i>
+                        <i class="icon-dh-logo"></i>
+                    </div>
+
+                    <!-- logos reseaux sociaux -->
+
+                    <div class="footer_social">
+                        <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" alt=""></a>
+                        <a href="https://instagram.com/" target=" _blank "><img src="images/insta.png " alt=" "></a>
+                    </div>
+                </div>
+
+                <!-- liens -->
+
+                <div class="row footermiddle ligne">
+                    <ul class="col-xs-12 col-md-offset-6 col-md-6 list-inline liens">
+                        <li><a href="/contents/terms-and-conditions.htm ">CGPS</a></li>
+                        <li><a href="/contents/privacy.htm ">Confidentialité</a></li>
+                        <li><a href="/contents/imprint.htm ">Général</a></li>
+                        <li class="footer_nav_contact "><a href="/contents/contact.htm ">F.A.Q.</a></li>
+                        <li class="footer_nav_press "><a href="/contents/Entreprises ">Entreprises</a></li>
+                        <li class="footer_nav_press "><a href="/contents/press.htm ">Presse</a></li>
+                        <li class="footer_nav_drivers-and-restaurants "><a href="/contents/drivers-and-restaurants.htm ">Contact</a></li>
+                        <li class="footer_nav_foodpedia "><a href="/foodpedia " data-no-turbolink="true ">foodpedia</a></li>
+                        <li class="footer_nav_drivers-and-restaurants "><a href="/contents/jobs " data-no-turbolink="true ">Carrières</a></li>
+                        <li class="footer_nav_affiliate "><a href="/contents/referral-terms ">Referral CGPS</a></li>
+                    </ul>
+                    <div class="col-xs-12 col-sm-3">
+                        <p>© 2016 Nourritoi</p>
+                    </div>
+                </div>
+
+                <!-- liste des restos -->
+
+                <div class="row footerbottom ligne">
+                    <div class="col-xs-12 col-sm-4">
+                        <h4><a href="https://www.Nourritoi.fr/city/paris ">Livraison à domicile Paris</a></h4>
+                        <p>
+                            <a href="/restaurant/s7nk/les-bols-de-jean " title="Les Bols de Jean ">Les Bols de Jean</a>,
+                            <a href="/chain/ca7yj/clasicoargentino " title="Clasico Argentino ">Clasico Argentino</a>,
+                            <a href="/chain/cg6cf/maison-kayser " title="Maison Kayser ">Maison Kayser</a>,
+                            <a href="/chain/cf2oa/schwartzs " title="Schwartz 's ">Schwartz's</a>,
+                            <a href="/chain/cq6wd/wagy" title="Wagy ">Wagy</a>,
+                            <a href="/restaurant/s6tb/nous" title="Nous ">Nous</a>,
+                            <a href="/restaurant/s9oy/bobskitchen" title="Bob's Kitchen ">Bob's Kitchen</a>,
+                            <a href="/restaurant/lk4d/kingmarcel" title="King Marcel ">King Marcel</a>,
+                            <a href="/chain/cg2cm/mme-shawn" title="Mme Shawn ">Mme Shawn</a>,
+                            <a href="/restaurant/s0hb/fauchon" title="Fauchon ">Fauchon</a>,
+                            <a href="/restaurant/s9pe/trois-fois-plus-de-piment" title="Trois Fois Plus de Piment ">Trois Fois Plus de Piment</a>,
+                            <a href="/chain/cq7hs/dalloyau" title="Dalloyau ">Dalloyau</a>,
+                            <a href="/restaurant/s6pa/toughburger" title="Tough Burger ">Tough Burger</a>,
+                            <a href="/restaurant/s5jx/baagaa" title="Baagaa ">Baagaa</a>,
+                            <a href="/chain/cl0kz/boco" title="Boco ">Boco</a>,
+                            <a href="/chain/co4bf/frogburger" title="Frog ">Frog</a>,
+                            <a href="/chain/co9fi/artisan-du-burger" title="L'Artisan du Burger ">L'Artisan du Burger</a>,
+                            <a href="/chain/cd9ps/thai-at-home" title="Thai at Home ">Thai at Home</a>,
+                            <a href="/restaurant/s3fr/street-bangkok-local-food" title="Street Bangkok Local Food ">Street Bangkok Local Food</a>,
+                            <a href="/chain/ce8wq/come" title="Côme ">Côme</a>,
+                            <a href="/restaurant/s2hq/parishanoi" title="Paris Hanoï ">Paris Hanoï</a>,
+                        </p>
+                        <h4><a href="https://www.Nourritoi.fr/city/lille">Livraison à domicile Lille</a></h4>
+                        <p>
+                            <a href="/restaurant/s2gm/amigo" title="Amigo ">Amigo</a>,
+                            <a href="/restaurant/s6fc/sushi-boutik" title="Sushi Boutik ">Sushi Boutik</a>,
+                            <a href="/restaurant/s9ta/be-yourself" title="Be Yourself ">Be Yourself</a>,
+                            <a href="/restaurant/s4lj/bacio-divino" title="Bacio Divino ">Bacio Divino</a>,
+                            <a href="/restaurant/s7au/akira" title="Akira ">Akira</a>,
+                            <a href="/restaurant/s1mw/sushi-wafu" title="Sushi Wafu ">Sushi Wafu</a>,
+                            <a href="/restaurant/s8pv/shuriken" title="Shuriken ">Shuriken</a>,
+                            <a href="/restaurant/s8qx/l-ecume-des-mers" title="L'Ecume des Mers ">L'Ecume des Mers</a>,
+                            <a href="/restaurant/s6xu/sushi-est" title="Sushi Est ">Sushi Est</a>,
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <h4><a href="https://www.Nourritoi.fr/city/lyon">Livraison à domicile Lyon</a></h4>
+                        <p>
+                            <a href="/restaurant/s8ii/guy-sons-vitton" title="Guy &amp; Sons Vitton ">Guy &amp; Sons Vitton</a>,
+                            <a href="/restaurant/s7yg/dolcefollia" title="Dolce Follia ">Dolce Follia</a>,
+                            <a href="/chain/ce4ml/king-marcel" title="King Marcel ">King Marcel</a>,
+                            <a href="/restaurant/s8sh/fahimatandoori" title="Fahima Tandoori ">Fahima Tandoori</a>,
+                            <a href="/restaurant/s3se/lemsushi" title="Lem Sushi ">Lem Sushi</a>,
+                            <a href="/restaurant/s8gs/bestbagels" title="Best Bagels ">Best Bagels</a>,
+                            <a href="/restaurant/s7qn/madeinfish" title="Made in Fish ">Made in Fish</a>,
+                            <a href="/restaurant/s0ck/bobunboulevard" title="Bobun Boulevard ">Bobun Boulevard</a>,
+                            <a href="/restaurant/s1hg/casadecarolis" title="Casa de Carolis ">Casa de Carolis</a>,
+                            <a href="/restaurant/s7ga/lemoulinasalades" title="Le Moulin à Salades ">Le Moulin à Salades</a>,
+                            <a href="/restaurant/s1tn/mendo" title="Mendo ">Mendo</a>,
+                            <a href="/restaurant/s2mr/tacotaco" title="Taco Taco ">Taco Taco</a>,
+                            <a href="/chain/cq2jn/woko" title="Woko ">Woko</a>,
+                            <a href="/restaurant/s9rx/yabio-hotel-de-ville" title="Yabio ">Yabio</a>,
+                            <a href="/restaurant/s2dj/bieh-vaise" title="BIEH ">BIEH</a>,
+                            <a href="/restaurant/s7kc/lallegriatre" title="L'Allegria Tre ">L'Allegria Tre</a>,
+                            <a href="/restaurant/s1ai/lepicerielyon8" title="L'Epicerie Lyon 8 ">L'Epicerie Lyon 8</a>,
+                            <a href="/restaurant/s2ac/chezfyfy" title="Chez Fyfy ">Chez Fyfy</a>,
+                            <a href="/restaurant/s0my/five" title="Five ">Five</a>,
+                            <a href="/restaurant/s6hl/laboutiquenosbonsplats" title="La Boutique Nos Bons Plats ">La Boutique Nos Bons Plats</a>,
+                        </p>
+                        <h4><a href="https://www.Nourritoi.fr/city/nantes">Livraison à domicile Nantes</a></h4>
+                        <p>
+                            <a href="/restaurant/s4lz/notabene" title="Nota Bene ">Nota Bene</a>,
+                            <a href="/restaurant/s2dw/shaantandoori" title="Shaan Tandoori ">Shaan Tandoori</a>,
+                            <a href="/restaurant/s5mn/kerjuliette" title="Ker Juliette ">Ker Juliette</a>,
+                            <a href="/restaurant/s9ku/ilbelpaese" title="Il Bel Paese ">Il Bel Paese</a>,
+                            <a href="/restaurant/s8cb/jabsburger" title="Jab's Burger ">Jab's Burger</a>,
+                            <a href="/restaurant/s5qs/makiburger" title="Maki Burger ">Maki Burger</a>,
+                            <a href="/restaurant/s3yw/lecedre" title="Le Cèdre ">Le Cèdre</a>,
+                            <a href="/restaurant/s7ch/alabellecocotte" title="A La Bonne Cocotte ">A La Bonne Cocotte</a>,
+                            <a href="/restaurant/s0hh/laripaille" title="La Ripaille ">La Ripaille</a>,
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <h4><a href="https://www.Nourritoi.fr/city/bordeaux">Livraison à domicile Bordeaux</a></h4>
+                        <p>
+                            <a href="/restaurant/s3dl/taj-mahal" title="Taj Mahal ">Taj Mahal</a>,
+                            <a href="/restaurant/s3cx/billyfactory" title="Billy Factory ">Billy Factory</a>,
+                            <a href="/restaurant/s7la/sushimi" title="Sushimi ">Sushimi</a>,
+                            <a href="/restaurant/s4xl/maxatable" title="Max à Table ">Max à Table</a>,
+                            <a href="/restaurant/s5nq/perditempo" title="Perditempo ">Perditempo</a>,
+                            <a href="/restaurant/s0aa/kenchic" title="Kenchic ">Kenchic</a>,
+                            <a href="/restaurant/s9un/umami-ramen" title="Umami Ramen ">Umami Ramen</a>,
+                            <a href="/restaurant/s1fp/punjab" title="Punjab ">Punjab</a>,
+                            <a href="/restaurant/s5uz/kohinoor2" title="Koh I Noor ">Koh I Noor</a>,
+                            <a href="/restaurant/s3zs/haruharu" title="Haru Haru ">Haru Haru</a>,
+                            <a href="/restaurant/s9fb/leveneto" title="Le Veneto ">Le Veneto</a>,
+                            <a href="/restaurant/s5lp/my-terroir" title="My Terroir ">My Terroir</a>,
+                            <a href="/restaurant/s7iu/bonjour-bdx" title="Bonjour BDX ">Bonjour BDX</a>,
+                        </p>
+                    </div>
+
+                    <!-- autres Pays -->
+                    <div class="othercountries">
+                        <br>&nbsp;
+                        <p>
+                            <a href="https://www.Nourritoi.at" title="Nourritoi.at">Nourritoi.at</a> | &nbsp;
+                            <a href="https://www.Nourritoi.ca" title="Nourritoi.ca">Nourritoi.ca</a> | &nbsp;
+                            <a href="https://www.Nourritoi.com.au" title="Nourritoi.com.au">Nourritoi.com.au</a> | &nbsp;
+                            <a href="https://www.Nourritoi.de" title="Nourritoi.de">Nourritoi.de</a> | &nbsp;
+                            <a href="https://www.Nourritoi.fi" title="Nourritoi.fi">Nourritoi.fi</a> | &nbsp;
+                            <a href="https://www.Nourritoi.fr" title="Nourritoi.fr">Nourritoi.fr</a> | &nbsp;
+                            <a href="https://www.Nourritoi.it" title="Nourritoi.it">Nourritoi.it</a> | &nbsp;
+                            <a href="https://www.Nourritoi.nl" title="Nourritoi.nl">Nourritoi.nl</a> | &nbsp;
+                            <a href="https://www.Nourritoi.no" title="Nourritoi.no">Nourritoi.no</a> | &nbsp;
+                            <a href="https://www.Nourritoi.se" title="Nourritoi.se">Nourritoi.se</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+          </footer>
+
 
 
 
     </div>
-
-
-
-
-
-
 
 
 
