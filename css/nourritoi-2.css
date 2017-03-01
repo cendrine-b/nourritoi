@@ -1,4 +1,5 @@
 html, body {
+  width: 100%;
   height: 100%;
 }
 
@@ -36,49 +37,51 @@ span.glyphicon-shopping-cart, span.glyphicon-user, .navbar-header a {
   font: italic bold 1.2em "MuseoSans", Helvetica, sans-serif;
 }
 
+/* WHITE LOGO, PICTO and TEXT NAV */
+#custom-nav a, span {
+  color: white;
+}
 
+/* MENU TO THE RIGHT */
 #nav-collect {
   float: right;
 }
 
+/* USER ICON TO THE LEFT ON SMALL SCREEN */
 #glyphicon-user {
   float: left;
 }
 
+/* TRY TO MAKE MENU BLOCKS VERTICALLY ALIGNED */
 /*.navbar-brand {
   text-align: center !important;
 }*/
-
-
 
 /*.header-english, .header-cart, .header-logged {
   display: inline-block;
   vertical-align: middle;
 }*/
 
-
 /*#nav-collect ul li a {
   display: inline-block;
   vertically-align: middle;
 }*/
 
+/* ADAPT NAVBAR */
+@media screen and (min-width: 320px){
+  /* SHORTER SCROLLING NAV */
+  .navbar {
+      padding: 10px 0;
+  }
 
-
-
-@media screen and (min-width: 360px){
+  .top-nav-collapse {
+      padding: 0;
+  }
 
   /* TRANSPARENT BACKGROUND TO WHITE */
-
   #custom-nav {
     background-color: rgba(0,0,0,0);
     border: 0;
-  }
-
-  #custom-nav .container {
-      padding-top: 1em;
-      padding-bottom: 1em;
-      padding-left: 3em;
-      padding-right: 3em;
   }
 
   #custom-nav.affix {
@@ -88,31 +91,118 @@ span.glyphicon-shopping-cart, span.glyphicon-user, .navbar-header a {
       opacity: 1;
   }
 
+  /* TRY TO CHANGE FONT COLOR WHEN SCROLLING */
   /*#navbar-header.affix {
     color: #d70f64 !important;
   }*/
 
+  /*#custom-nav {
+    a.affix {
+      color: #d70f64;
+    }
+  }*/
 }
 
-
-/* WHITE LOGO, PICTO and TEXT NAV */
-#custom-nav a, span {
-  color: white;
-}
-
-
-
-/*#custom-nav {
-  a.affix {
-    color: #d70f64;
-  }
-}*/
-
-
-/* //////////////////// BOUTON SE CONNECTER //////////////////// */
+/* //////////////////// LOGGED BUTTON //////////////////// */
 
 .btn.sharp {
   border-radius:0;
   background: none;
   border: 1px solid white;
 }
+
+/* //////////////////////////////////////// HOME TEASER //////////////////////////////////////// */
+
+.home_teaser_slogan {
+    width: 95%;
+    margin: auto;
+    color: white;
+    padding-bottom: 5em;
+    padding-top: 10em;
+}
+
+.home_teaser_slogan-text {
+    font-weight: 300;
+}
+
+/* ADAPT SLOGAN TEXT HEIGHT & SIZE TO SCREENS */
+@media (min-width: 320px) {
+  .home_teaser_slogan-text {
+      font-size: 1.8rem;
+      margin-top: -3.5em;
+      line-height: 1.4em;
+  }
+}
+@media (min-width: 768px) {
+    .home_teaser_slogan-text {
+        font-size: 3.2rem;
+        margin-top: -1.4em;
+        line-height: 1.2em;
+    }
+}
+@media (min-width: 992px) {
+    .home_teaser_slogan-text {
+        font-size: 3.2rem;
+        margin-top: -1.6em;
+    }
+}
+@media (min-width: 1200px) {
+    .home_teaser_slogan-text {
+        font-size: 4.1rem;
+        margin-top: 1.4em;
+    }
+}
+
+/* //////////////////////////////////////// FORM //////////////////////////////////////// */
+
+#lgFormGroupInput {
+  height: 3.2em;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+/*.form-control {
+  border-radius: 1em;
+}*/
+
+.btn.pink {
+  background: #d70f64;
+  border: 0;
+  font-size: 0.9em;
+/*  padding: 0 1.6em;*/
+}
+
+.button-text-separator {
+  padding: 0.7em 0.4em;
+  font-size: 1em;
+}
+
+.btn.pink, .button-text-separator {
+  height: 3.2em;
+  font-weight: 300;
+}
+
+/* ADAPT FORM HEIGHT TO SCREENS */
+/*@media (min-width: 320px) {
+  form {
+    margin-top: -4.8em;
+  }
+  .btn.pink, .button-text-separator {
+    margin-top: 0.7em;
+  }
+}
+@media (min-width: 768px) {
+  form {
+    margin-top: -3.8em;
+  }
+  .btn.pink, .button-text-separator {
+    margin-top: 0;
+  }
+  @media (min-width: 992px) {
+    form {
+      margin-top: -3.8em;
+    }
+    .btn.pink, .button-text-separator {
+      margin-top: 0;
+    }
+}*/

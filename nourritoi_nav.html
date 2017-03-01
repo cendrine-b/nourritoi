@@ -9,13 +9,10 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <script src="js/nourritoi_nav.js"></script>
 
     <!--<link href="css/nourritoi_nav.css" rel="stylesheet">-->
     <link href="css/nourritoi-2.css" rel="stylesheet">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,7 +47,7 @@
                         <span class="glyphicon glyphicon-user"></span>
                       </button>
                       <!-- //////////// BRAND //////////// -->
-                      <a id="brand" class="navbar-brand" href="#">
+                      <a id="brand" class="navbar-brand page-scroll" href="#">
                         <span class="glyphicon glyphicon-ice-lolly-tasted" aria-hidden="true"></span><i>Nourritoi</i>
                       </a>
                     </div>
@@ -78,37 +75,27 @@
               </nav>
             </header>
 
-
-
-
-
-
-
-
-
-
             <!-- //////////// SECTION TEASER //////////// -->
             <section id="home_teaser">
                 <div class="home_teaser_slogan">
-                    <h1 class="home_teaser_slogan-text">
+                    <h1 class="home_teaser_slogan-text text-uppercase">
                       Vos restaurants préférés, enfin livrés
                     </h1>
                 </div>
             </section>
 
             <!-- //////////// FORM //////////// -->
-            <form>
-                <div class="row">
-                    <div class="col-lg-5">
-                        <input class="form-control form-control-lg" type="text" placeholder="Entrez votre adresse">
-                    </div>
-                </div>
+            <form class="form-inline container">
+              <label class="sr-only" for="inlineFormInputGroup">Entrer votre adresse</label>
+              <div class="input-group col-lg-6">
+                <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Entrez votre adresse">
+              </div>
+              <button type="button" class="btn pink btn-primary btn-lg text-uppercase">Livraison</button>
+              <span class="button-text-separator">ou</span>
+              <button type="button" class="btn pink btn-primary btn-lg text-uppercase">Retrait au restaurant</button>
             </form>
 
-
-
-
-            <form class="address-form full-address">
+            <!--<form class="address-form full-address">
                 <div class="address-form__input-wrapper">
                     <input type="text" class="address-form__input" id="delivery-information-postal-index" value="" placeholder="Entrez votre adresse" data-msg_error_not_found="Une erreur s'est produite. Nous ne reconnaissons pas l'adresse saisie. Veuillez réessayer." data-msg_you_probably_mean="Ce code postal correspond-il à votre demande?"
                         data-msg_error_empty="Veuillez entrer votre adresse" data-msg_error_postal_code="Veuillez entrer votre adresse complète" data-msg_error_vendor_empty_address="Entrez votre adresse et vérifiez si ce restaurant livre jusqu'à chez vous.">
@@ -129,9 +116,7 @@
 
                     <button class="button js-restaurants-search-submit address-form__button--reduced gtm-homepage-delivery-button address-form__button" data-gtm-cta="findRestaurant_main"><i class="icon-right-open-big"></i></button>
                 </div>
-            </form>
-
-
+            </form>-->
 
         </section>
 
@@ -166,10 +151,23 @@
     </div>
 
 
+
+
+
+
+
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/nourritoi_nav.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/scrolling-nav.js"></script>
+
 </body>
 
 </html>
