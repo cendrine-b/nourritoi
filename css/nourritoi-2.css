@@ -299,6 +299,26 @@ span.glyphicon-shopping-cart, span.glyphicon-user, .navbar-header a {
     }
 }*/
 
+/* //////////////////////////////////////// APP LOGOS //////////////////////////////////////// */
+
+/* ALIGN BOTTOM CENTER */
+.app-logo_wrapper {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.app-logo_wrapper img {
+  max-height: 4em;
+  margin-right: 0.4em;
+  margin-left: 0.4em;
+  margin-bottom: 1.4em;
+}
+
+
 
 /* //////////////////////////////////////////////// SECOND PART : BEST ADDRESSES //////////////////////////////////////////////// */
 
