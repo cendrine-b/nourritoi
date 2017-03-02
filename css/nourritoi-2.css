@@ -1012,16 +1012,40 @@ span.glyphicon-user {
 /* //////////////////////////////////////////////// SIXTH PART : FOOTER //////////////////////////////////////////////// */
 
 
-/*SECTION 4-FOOTER */
-
-.emportez_text {
-  max-width: 80%;
-  margin: auto;
+/*SECTION 4- */
+.section4, .section6 {
+    padding-top: 20px;
 }
 
-/*.emportez {
+.emportez_text {
     color: #d70f64;
-}*/
+}
+
+.logomobile {
+    font: italic bold 2.7rem "MuseoSans", Helvetica, sans-serif;
+    color: #c8c8c8;
+    height: 100%;
+    display: block;
+    text-align: left;
+}
+
+.glyphicon.glyphicon-ice-lolly-tasted.black {
+    color: #c8c8c8;
+}
+
+.logomobile img {
+    width: 140px;
+    height: auto;
+    margin: auto;
+}
+
+.applelogo {
+    padding-top: 70%;
+}
+
+.andrologo {
+    padding-top: 20px;
+}
 
 
 /* SECTION6-FOOTER */
@@ -1044,7 +1068,7 @@ span.glyphicon-user {
     border-top: 1px solid #ccc;
 }
 
-.bouton {
+.boutonnage {
     font-size: 1.4rem;
     text-transform: uppercase;
     color: #fff;
@@ -1052,13 +1076,18 @@ span.glyphicon-user {
 }
 
 .footer_social {
-    float: right;
+    display: block;
+    text-align: right;
 }
 
 .footerxxtop, .footerxtop, .footertop, .footermiddle, .footerbottom {
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 0 auto;
+}
+
+.footertop {
+    line-height: normal;
 }
 
 .liens {
