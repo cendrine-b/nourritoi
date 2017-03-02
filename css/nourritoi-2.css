@@ -134,8 +134,12 @@ header {
     padding-top: 2em;
 }
 
-span.glyphicon-shopping-cart, span.glyphicon-user, .navbar-header a {
+span.glyphicon-shopping-cart, .navbar-header a {
     font-size: 2em;
+}
+
+span.glyphicon-user {
+  font-size: 2.23rem;
 }
 
 .navbar-header a i {
@@ -171,27 +175,6 @@ span.glyphicon-shopping-cart, span.glyphicon-user, .navbar-header a {
     float: left;
 }
 
-
-/* TRY TO MAKE MENU BLOCKS VERTICALLY ALIGNED */
-
-
-/*.navbar-brand {
-  text-align: center !important;
-}*/
-
-
-/*.header-english, .header-cart, .header-logged {
-  display: inline-block;
-  vertical-align: middle;
-}*/
-
-
-/*#nav-collect ul li a {
-  display: inline-block;
-  vertically-align: middle;
-}*/
-
-
 /* ADAPT NAVBAR */
 
 @media screen and (min-width: 320px) {
@@ -214,21 +197,51 @@ span.glyphicon-shopping-cart, span.glyphicon-user, .navbar-header a {
         border-bottom: 0.1px solid lightgrey;
         opacity: 1;
     }
-
-    /*#header-english.affix {
-        color: blue;
-    }*/
-
-
-    /* TRY TO CHANGE FONT COLOR WHEN SCROLLING */
-    /*#navbar-header.affix {
-    color: #d70f64 !important;
-  }*/
-    /*#custom-nav {
-    a.affix {
+    /* TEXT COLOR PINK */
+    #custom-nav.affix .container .navbar-header.page-scroll a, #custom-nav.affix .container .navbar-header.page-scroll span, #custom-nav.affix .container #nav-collect .nav.navbar-nav a, #custom-nav.affix .container #nav-collect span {
       color: #d70f64;
     }
-  }*/
+    /* TEXT HOVER BUTTON NONE */
+    #custom-nav.affix button:hover {
+      color: #d70f64;
+    }
+    /* REDUCE BRAND SIZE */
+    #custom-nav.affix .container .navbar-header.page-scroll #brand i {
+      font-size: 1em;
+    }
+    #custom-nav.affix .container .navbar-header.page-scroll #brand span {
+      font-size: 2.23rem;
+    }
+    /* REDUCE SIZE OF CART WHEN SCROLLING */
+    #custom-nav.affix .container .navbar-header.page-scroll #glyphicon-cart span {
+      font-size: 2.23rem;
+    }
+}
+
+/* REDUCE BRAND SIZE ON SMALL SCREEN */
+@media (min-width: 320px) {
+  #custom-nav .container .navbar-header.page-scroll #brand i {
+    font-size: 1em;
+  }
+  #custom-nav .container .navbar-header.page-scroll #brand span {
+    font-size: 2.23rem;
+  }
+}
+@media (min-width: 992px) {
+  #custom-nav .container .navbar-header.page-scroll #brand i {
+    font-size: 1.2em;
+  }
+  #custom-nav .container .navbar-header.page-scroll #brand span {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1200px) {
+  #custom-nav .container .navbar-header.page-scroll #brand i {
+    font-size: 1.2em;
+  }
+  #custom-nav .container .navbar-header.page-scroll #brand span {
+    font-size: 1em;
+  }
 }
 
 
@@ -238,6 +251,11 @@ span.glyphicon-shopping-cart, span.glyphicon-user, .navbar-header a {
     border-radius: 0;
     background: none;
     border: 1px solid white;
+}
+
+/* //////////////////// ENGLISH BUTTON //////////////////// */
+.btn.sharp.english {
+    border: none;
 }
 
 
@@ -366,9 +384,6 @@ span.glyphicon-shopping-cart, span.glyphicon-user, .navbar-header a {
   margin-left: 0.4em;
   margin-bottom: 1.4em;
 }
-
-
-
 
 
 
@@ -869,20 +884,36 @@ span.glyphicon-shopping-cart, span.glyphicon-user, .navbar-header a {
 /* //////////////////////////////////////////////// FIFTH PART : ENTERPRISE //////////////////////////////////////////////// */
 
 .enterprise {
-    height: 100vh;
-    /*background-color: white;*/
-    background-image: url(../images/corporate-banner.png);
-    /*margin-top: 0%;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*text-align: center;*/
-    /*vertical-align: top;*/
-    background-position: center;
+  height: 100vh;
+  background: url(../images/corporate-banner.png) no-repeat center bottom;
+  background-size: cover;
 }
 
-.enterprise_text {
-  max-width: 50%;
-  margin: auto;
+@media(min-width: 320px) {
+  .enterprise_text {
+    max-width: 60%;
+    margin: auto;
+    padding-top: 5%;
+  }
+}
+@media(min-width: 1200px) {
+  .enterprise_text {
+    max-width: 50%;
+    margin: auto;
+    padding-top: 5%;
+  }
+}
+
+.enterprise_text p {
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.7em;
+  margin-top: 1em;
+}
+
+/* BUTTON "COMMENCEZ" */
+.btn.pink.commencez.btn-primary.btn-lg.text-uppercase {
+  padding: 0 20%;
 }
 
 /*.a {
