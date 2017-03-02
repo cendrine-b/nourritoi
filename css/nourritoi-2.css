@@ -176,6 +176,12 @@ span.glyphicon-shopping-cart, span.glyphicon-user, .navbar-header a {
         border-bottom: 0.1px solid lightgrey;
         opacity: 1;
     }
+
+    /*#header-english.affix {
+        color: blue;
+    }*/
+
+
     /* TRY TO CHANGE FONT COLOR WHEN SCROLLING */
     /*#navbar-header.affix {
     color: #d70f64 !important;
@@ -249,6 +255,11 @@ span.glyphicon-shopping-cart, span.glyphicon-user, .navbar-header a {
     font-weight: 300;
 }
 
+/* TRY BORDER INPUT FORM */
+/*.input-group {
+  border: 1px solid white;
+  border-radius: 10px;
+}*/
 
 /*.form-control {
   border-radius: 15px;
