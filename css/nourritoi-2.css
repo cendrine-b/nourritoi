@@ -497,218 +497,63 @@ span.glyphicon-shopping-cart, span.glyphicon-user, .navbar-header a {
   margin: auto;
 }
 
-.titrelivraisonmain {
-    /*position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 1.9rem;
-    line-height: 1;*/
-    padding-bottom: 5px;
-    /*padding-left: 6%;
-    padding-right: 6%;
-    text-align: center;
-    font-family: "MuseoSans-300", Arial, sans-serif;
-    color: #d70f64;*/
+.fotoville {
+    margin-left: 16%;
 }
-
-.titrelivraison {
-    margin-bottom: 60px;
-    /*position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 2.2rem;
-    line-height: 1;
-    text-align: center;
-    color: #292929;
-    text-transform: uppercase;
-    padding-left: 6%;
-    padding-right: 6%;*/
-}
-
-/* ON POURRAIT SIMPLIFIER LE CODE en rassemblant toutes les photos :
-.photo1, .photo2, .photo3, .photo4, .photo5 {
-  width: 420px;
-  height: 210px;
-  -webkit-transform-style: preserve-3d;
-  -webkit-transform-origin: 100%;
-  -webkit-transition: all 0.3s ease;
-  transform-style: preserve-3d;
-  transform-origin: 100%;
-  transition: all 0.3s ease;
-}*/
-.photo1 {
-    width: 420px;
-    height: 210px;
-    /*position: relative;*/
+.photo1, .photo3, .photo5 {
+    height: 13vw;
     -webkit-transform-style: preserve-3d;
     -webkit-transform-origin: 100%;
     -webkit-transition: all 0.3s ease;
     transform-style: preserve-3d;
     transform-origin: 100%;
     transition: all 0.3s ease;
+    margin-bottom: 20px;
 }
-
-.bouton {
-    display: none;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 0 20px 0 20px;
-    height: 44px;
-    border: 0;
-    color: #fff;
-    background-color: #d70f64;
-    position: relative;
+.photo2, .photo4 {
+    height: 13vw;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 100%;
+    -webkit-transition: all 0.3s ease;
+    transform-style: preserve-3d;
+    transform-origin: 100%;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
 }
-
 .container1:hover .photo1 {
     -webkit-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
 }
-
-.front, .back {
-    width: 420px;
-    height: 210px;
-    position: absolute;
-    left: 0;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.back {
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-}
-
-.photo2 {
-    width: 420px;
-    height: 210px;
-    position: relative;
-    -webkit-transform-style: preserve-3d;
-    -webkit-transform-origin: 100%;
-    -webkit-transition: all 0.3s ease;
-    transform-style: preserve-3d;
-    transform-origin: 100%;
-    transition: all 0.3s ease;
-}
-
 .container2:hover .photo2 {
     -webkit-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
 }
-
-.front, .back {
-    width: 420px;
-    height: 210px;
-    position: absolute;
-    left: 0;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.back {
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-}
-
-.photo3 {
-    width: 420px;
-    height: 210px;
-    margin-top: 20px;
-    position: relative;
-    -webkit-transform-style: preserve-3d;
-    -webkit-transform-origin: 100%;
-    -webkit-transition: all 0.3s ease;
-    transform-style: preserve-3d;
-    transform-origin: 100%;
-    transition: all 0.3s ease;
-}
-
 .container3:hover .photo3 {
     -webkit-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
 }
-
-.front, .back {
-    width: 420px;
-    height: 210px;
-    position: absolute;
-    left: 0;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.back {
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-}
-
-.photo4 {
-    width: 420px;
-    height: 210px;
-    margin-top: 20px;
-    position: relative;
-    -webkit-transform-style: preserve-3d;
-    -webkit-transform-origin: 100%;
-    -webkit-transition: all 0.3s ease;
-    transform-style: preserve-3d;
-    transform-origin: 100%;
-    transition: all 0.3s ease;
-}
-
 .container4:hover .photo4 {
     -webkit-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
 }
-
-.front, .back {
-    width: 420px;
-    height: 210px;
-    position: absolute;
-    left: 0;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.back {
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-}
-
-.photo5 {
-    width: 420px;
-    height: 210px;
-    margin-top: 20px;
-    position: relative;
-    -webkit-transform-style: preserve-3d;
-    -webkit-transform-origin: 100%;
-    -webkit-transition: all 0.3s ease;
-    transform-style: preserve-3d;
-    transform-origin: 100%;
-    transition: all 0.3s ease;
-}
-
 .container5:hover .photo5 {
     -webkit-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
 }
-
 .front, .back {
-    width: 420px;
-    height: 210px;
+    height: 13vw;
     position: absolute;
     left: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
 .back {
     -webkit-transform: rotateX(180deg);
     transform: rotateX(180deg);
-}
+  }
+
+
+
 
 
 
