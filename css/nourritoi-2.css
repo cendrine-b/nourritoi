@@ -316,7 +316,6 @@ span.glyphicon-user {
   border: 1px solid white;
   border-radius: 10px;
 }*/
-
 /*.form-control {
   border-radius: 15px;
 }*/
@@ -337,34 +336,6 @@ span.glyphicon-user {
     height: 3.2em;
     font-weight: 300;
 }
-
-
-/* ADAPT FORM HEIGHT TO SCREENS */
-
-
-/*@media (min-width: 320px) {
-  form {
-    margin-top: -4.8em;
-  }
-  .btn.pink, .button-text-separator {
-    margin-top: 0.7em;
-  }
-}
-@media (min-width: 768px) {
-  form {
-    margin-top: -3.8em;
-  }
-  .btn.pink, .button-text-separator {
-    margin-top: 0;
-  }
-  @media (min-width: 992px) {
-    form {
-      margin-top: -3.8em;
-    }
-    .btn.pink, .button-text-separator {
-      margin-top: 0;
-    }
-}*/
 
 /* //////////////////////////////////////// APP LOGOS //////////////////////////////////////// */
 
@@ -512,218 +483,60 @@ span.glyphicon-user {
   margin: auto;
 }
 
-.titrelivraisonmain {
-    /*position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 1.9rem;
-    line-height: 1;*/
-    padding-bottom: 5px;
-    /*padding-left: 6%;
-    padding-right: 6%;
-    text-align: center;
-    font-family: "MuseoSans-300", Arial, sans-serif;
-    color: #d70f64;*/
+.fotoville {
+    margin-left: 16%;
 }
-
-.titrelivraison {
-    margin-bottom: 60px;
-    /*position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 2.2rem;
-    line-height: 1;
-    text-align: center;
-    color: #292929;
-    text-transform: uppercase;
-    padding-left: 6%;
-    padding-right: 6%;*/
-}
-
-/* ON POURRAIT SIMPLIFIER LE CODE en rassemblant toutes les photos :
-.photo1, .photo2, .photo3, .photo4, .photo5 {
-  width: 420px;
-  height: 210px;
-  -webkit-transform-style: preserve-3d;
-  -webkit-transform-origin: 100%;
-  -webkit-transition: all 0.3s ease;
-  transform-style: preserve-3d;
-  transform-origin: 100%;
-  transition: all 0.3s ease;
-}*/
-.photo1 {
-    width: 420px;
-    height: 210px;
-    /*position: relative;*/
+.photo1, .photo3, .photo5 {
+    height: 13vw;
     -webkit-transform-style: preserve-3d;
     -webkit-transform-origin: 100%;
     -webkit-transition: all 0.3s ease;
     transform-style: preserve-3d;
     transform-origin: 100%;
     transition: all 0.3s ease;
+    margin-bottom: 20px;
 }
-
-.bouton {
-    display: none;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 0 20px 0 20px;
-    height: 44px;
-    border: 0;
-    color: #fff;
-    background-color: #d70f64;
-    position: relative;
+.photo2, .photo4 {
+    height: 13vw;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 100%;
+    -webkit-transition: all 0.3s ease;
+    transform-style: preserve-3d;
+    transform-origin: 100%;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
 }
-
 .container1:hover .photo1 {
     -webkit-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
 }
-
-.front, .back {
-    width: 420px;
-    height: 210px;
-    position: absolute;
-    left: 0;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.back {
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-}
-
-.photo2 {
-    width: 420px;
-    height: 210px;
-    position: relative;
-    -webkit-transform-style: preserve-3d;
-    -webkit-transform-origin: 100%;
-    -webkit-transition: all 0.3s ease;
-    transform-style: preserve-3d;
-    transform-origin: 100%;
-    transition: all 0.3s ease;
-}
-
 .container2:hover .photo2 {
     -webkit-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
 }
-
-.front, .back {
-    width: 420px;
-    height: 210px;
-    position: absolute;
-    left: 0;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.back {
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-}
-
-.photo3 {
-    width: 420px;
-    height: 210px;
-    margin-top: 20px;
-    position: relative;
-    -webkit-transform-style: preserve-3d;
-    -webkit-transform-origin: 100%;
-    -webkit-transition: all 0.3s ease;
-    transform-style: preserve-3d;
-    transform-origin: 100%;
-    transition: all 0.3s ease;
-}
-
 .container3:hover .photo3 {
     -webkit-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
 }
-
-.front, .back {
-    width: 420px;
-    height: 210px;
-    position: absolute;
-    left: 0;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.back {
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-}
-
-.photo4 {
-    width: 420px;
-    height: 210px;
-    margin-top: 20px;
-    position: relative;
-    -webkit-transform-style: preserve-3d;
-    -webkit-transform-origin: 100%;
-    -webkit-transition: all 0.3s ease;
-    transform-style: preserve-3d;
-    transform-origin: 100%;
-    transition: all 0.3s ease;
-}
-
 .container4:hover .photo4 {
     -webkit-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
 }
-
-.front, .back {
-    width: 420px;
-    height: 210px;
-    position: absolute;
-    left: 0;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.back {
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-}
-
-.photo5 {
-    width: 420px;
-    height: 210px;
-    margin-top: 20px;
-    position: relative;
-    -webkit-transform-style: preserve-3d;
-    -webkit-transform-origin: 100%;
-    -webkit-transition: all 0.3s ease;
-    transform-style: preserve-3d;
-    transform-origin: 100%;
-    transition: all 0.3s ease;
-}
-
 .container5:hover .photo5 {
     -webkit-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
 }
-
 .front, .back {
-    width: 420px;
-    height: 210px;
+    height: 13vw;
     position: absolute;
     left: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
 .back {
     -webkit-transform: rotateX(180deg);
     transform: rotateX(180deg);
-}
+  }
 
 
 
@@ -803,7 +616,40 @@ span.glyphicon-user {
 
 
 /* //////////////////////////////////////////////// FOURTH PART : PHONES //////////////////////////////////////////////// */
+/*SECTION 4- */
+.section4, .section6 {
+    padding-top: 20px;
+}
 
+.emportez_text {
+    color: #d70f64;
+}
+
+.logomobile {
+    font: italic bold 2.7rem "MuseoSans", Helvetica, sans-serif;
+    color: #c8c8c8;
+    height: 100%;
+    display: block;
+    text-align: left;
+}
+
+.glyphicon.glyphicon-ice-lolly-tasted.black {
+    color: #c8c8c8;
+}
+
+.logomobile img {
+    width: 140px;
+    height: auto;
+    margin: auto;
+}
+
+.applelogo {
+    padding-top: 70%;
+}
+
+.andrologo {
+    padding-top: 20px;
+}
 
 
 
@@ -916,21 +762,7 @@ span.glyphicon-user {
   padding: 0 20%;
 }
 
-/*.a {
-    font-family: "MuseoSans-700";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20pt;
-    color: purple;
-}
 
-.b, .c, .d {
-    font-family: "MuseoSans-300";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30pt;
-    color: black;
-}*/
 
 
 
@@ -1010,20 +842,6 @@ span.glyphicon-user {
 
 
 /* //////////////////////////////////////////////// SIXTH PART : FOOTER //////////////////////////////////////////////// */
-
-
-/*SECTION 4-FOOTER */
-
-.emportez_text {
-  max-width: 80%;
-  margin: auto;
-}
-
-/*.emportez {
-    color: #d70f64;
-}*/
-
-
 /* SECTION6-FOOTER */
 
 .section6 a {
@@ -1044,7 +862,7 @@ span.glyphicon-user {
     border-top: 1px solid #ccc;
 }
 
-.bouton {
+.boutonnage {
     font-size: 1.4rem;
     text-transform: uppercase;
     color: #fff;
@@ -1052,13 +870,18 @@ span.glyphicon-user {
 }
 
 .footer_social {
-    float: right;
+    display: block;
+    text-align: right;
 }
 
 .footerxxtop, .footerxtop, .footertop, .footermiddle, .footerbottom {
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 0 auto;
+}
+
+.footertop {
+    line-height: normal;
 }
 
 .liens {
