@@ -218,8 +218,11 @@ span.glyphicon-user {
     }
 }
 
-/* REDUCE BRAND SIZE ON SMALL SCREEN */
+/* REDUCE BRAND SIZE + CENTER ON SMALL SCREEN */
 @media (min-width: 320px) {
+  #brand {
+    margin: 0 5%;
+  }
   #custom-nav .container .navbar-header.page-scroll #brand i {
     font-size: 1em;
   }
@@ -228,6 +231,9 @@ span.glyphicon-user {
   }
 }
 @media (min-width: 992px) {
+  #brand {
+    margin: 0;
+  }
   #custom-nav .container .navbar-header.page-scroll #brand i {
     font-size: 1.2em;
   }
