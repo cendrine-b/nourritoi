@@ -2,18 +2,15 @@ html, body {
     width: 100%;
     height: 100%;
 }
-
 body {
     font-family: "MuseoSans-500", Helvetica, sans-serif;
     text-align: center;
 }
-
 #wrap {
     min-height: 100%;
     height: auto !important;
     height: 100%;
 }
-
 h1 {
   font-weight: 300;
   font-size: 4.1rem;
@@ -45,7 +42,6 @@ h1 {
         font-size: 4.1rem;
     }
 }
-
 h2 {
   font-weight: 300;
   font-size: 3.2rem;
@@ -81,78 +77,29 @@ h2 {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* //////////////////////////////////////////////// FIRST PART : HEADER //////////////////////////////////////////////// */
-
 .first-part {
     height: 100vh;
     background: url(../images/header_background.jpg) no-repeat center center;
     background-size: cover;
 }
-
-
 /* //////////////////////////////////////// HEADER //////////////////////////////////////// */
-
 header {
     padding-top: 2em;
 }
-
 span.glyphicon-shopping-cart, .navbar-header a {
     font-size: 2em;
 }
-
 span.glyphicon-user {
   font-size: 2.23rem;
 }
-
 .navbar-header a i {
     font: italic 400 1.2em "MuseoSans", Helvetica, sans-serif;
 }
-
-
 /* WHITE LOGO, PICTO and TEXT NAV */
-
 #custom-nav a, span {
     color: white;
 }
-
 /* NO HOVER ON NAV */
 #custom-nav a:hover {
   background-color: transparent;
@@ -160,23 +107,15 @@ span.glyphicon-user {
 #custom-nav button:hover {
   color: white;
 }
-
-
 /* MENU TO THE RIGHT */
-
 #nav-collect {
     float: right;
 }
-
-
 /* USER ICON TO THE LEFT ON SMALL SCREEN */
-
 #glyphicon-user {
     float: left;
 }
-
 /* ADAPT NAVBAR */
-
 @media screen and (min-width: 320px) {
     /* SHORTER SCROLLING NAV */
     .navbar {
@@ -217,7 +156,6 @@ span.glyphicon-user {
       font-size: 2.23rem;
     }
 }
-
 /* REDUCE BRAND SIZE + CENTER ON SMALL SCREEN */
 @media (min-width: 320px) {
   #brand {
@@ -249,24 +187,17 @@ span.glyphicon-user {
     font-size: 1em;
   }
 }
-
-
 /* //////////////////// LOGGED BUTTON //////////////////// */
-
 .btn.sharp {
     border-radius: 0;
     background: none;
     border: 1px solid white;
 }
-
 /* //////////////////// ENGLISH BUTTON //////////////////// */
 .btn.sharp.english {
     border: none;
 }
-
-
 /* //////////////////////////////////////// HOME TEASER //////////////////////////////////////// */
-
 .home_teaser_slogan {
     width: 80%;
     margin: auto;
@@ -274,12 +205,10 @@ span.glyphicon-user {
     padding-bottom: 5em;
     padding-top: 10em;
 }
-
 .home_teaser_slogan h1 {
     color: white;
     font-size: 1.8rem;
 }
-
 /* FIRST PART H1 RESPONSIVE */
 @media (min-width: 320px) {
     .home_teaser_slogan h1 {
@@ -307,44 +236,26 @@ span.glyphicon-user {
         margin-top: 1.4em;
     }
 }
-
-
 /* //////////////////////////////////////// FORM //////////////////////////////////////// */
-
 #lgFormInputGroup {
     height: 3em;
     font-size: 1em;
     font-weight: 300;
 }
-
-/* TRY BORDER INPUT FORM */
-/*.input-group {
-  border: 1px solid white;
-  border-radius: 10px;
-}*/
-/*.form-control {
-  border-radius: 15px;
-}*/
-
 .btn.pink {
     background: #d70f64;
     border: 0;
     font-size: 0.9em;
-    /*  padding: 0 1.6em;*/
 }
-
 .button-text-separator {
     padding: 0.7em 0.4em;
     font-size: 1em;
 }
-
 .btn.pink, .button-text-separator {
     height: 3.2em;
     font-weight: 300;
 }
-
 /* //////////////////////////////////////// APP LOGOS //////////////////////////////////////// */
-
 /* ALIGN BOTTOM CENTER */
 .app-logo_wrapper {
   position: absolute;
@@ -354,7 +265,6 @@ span.glyphicon-user {
   right: 0;
   bottom: 0;
 }
-
 .app-logo_wrapper img {
   max-height: 4em;
   margin-right: 0.4em;
@@ -362,133 +272,18 @@ span.glyphicon-user {
   margin-bottom: 1.4em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* //////////////////////////////////////////////// SECOND PART : BEST ADDRESSES //////////////////////////////////////////////// */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* //////////////////////////////////////////////// THIRD PART : TOWNS //////////////////////////////////////////////// */
-
-.villes {
-    margin: auto;
+.container {
+  margin-right: auto;
+  margin-left: auto;
 }
-
 .livraison_text {
   max-width: 80%;
   margin: auto;
+  margin-bottom: 30px;
 }
-
 .fotoville {
     margin-left: 16%;
 }
@@ -544,93 +339,14 @@ span.glyphicon-user {
     transform: rotateX(180deg);
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* //////////////////////////////////////////////// FOURTH PART : PHONES //////////////////////////////////////////////// */
-/*SECTION 4- */
+/* SECTION 4- */
 .section4, .section6 {
     padding-top: 20px;
 }
-
 .emportez_text {
     color: #d70f64;
 }
-
 .logomobile {
     font: italic bold 2.7rem "MuseoSans", Helvetica, sans-serif;
     color: #c8c8c8;
@@ -638,109 +354,28 @@ span.glyphicon-user {
     display: block;
     text-align: left;
 }
-
 .glyphicon.glyphicon-ice-lolly-tasted.black {
     color: #c8c8c8;
 }
-
 .logomobile img {
     width: 140px;
     height: auto;
     margin: auto;
 }
-
 .applelogo {
     padding-top: 70%;
 }
-
 .andrologo {
     padding-top: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* //////////////////////////////////////////////// FIFTH PART : ENTERPRISE //////////////////////////////////////////////// */
-
 .enterprise {
   height: 100vh;
   background: url(../images/corporate-banner.png) no-repeat center bottom;
   background-size: cover;
 }
-
+/* RESPONSIVE TEXT */
 @media(min-width: 320px) {
   .enterprise_text {
     max-width: 60%;
@@ -755,151 +390,59 @@ span.glyphicon-user {
     padding-top: 5%;
   }
 }
-
 .enterprise_text p {
   font-weight: 300;
   font-size: 1.2em;
   line-height: 1.7em;
   margin-top: 1em;
 }
-
 /* BUTTON "COMMENCEZ" */
 .btn.pink.commencez.btn-primary.btn-lg.text-uppercase {
   padding: 0 20%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* //////////////////////////////////////////////// SIXTH PART : FOOTER //////////////////////////////////////////////// */
 /* SECTION6-FOOTER */
-
 .section6 a {
     text-decoration: none;
     color: inherit;
 }
-
 .section6 a:hover {
     color: #d70f64;
 }
-
 .newsletter b {
     display: block;
     text-transform: uppercase;
 }
-
 .ligne {
     border-top: 1px solid #ccc;
 }
-
 .boutonnage {
     font-size: 1.4rem;
     text-transform: uppercase;
     color: #fff;
     background-color: #d70f64;
 }
-
 .footer_social {
     display: block;
     text-align: right;
 }
-
 .footerxxtop, .footerxtop, .footertop, .footermiddle, .footerbottom {
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 0 auto;
 }
-
 .footertop {
     line-height: normal;
 }
-
 .liens {
     text-align: right;
 }
-
 .footerbottom p {
     text-align: justify;
     color: grey;
     font-size: 1.4rem;
 }
-
 .footerbottom h4 {
     font-weight: bold;
     text-transform: uppercase;
@@ -908,17 +451,14 @@ span.glyphicon-user {
     font-size: 1.4rem;
     line-height: 1.6;
 }
-
 .othercountries {
     float: left;
     width: 100%;
     height: auto;
 }
-
 .othercountries p {
     text-align: center;
 }
-
 .othercountries a {
     color: #666;
     cursor: pointer;
